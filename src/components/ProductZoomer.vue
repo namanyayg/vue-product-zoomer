@@ -265,4 +265,30 @@ export default {
   height: auto;
   width: 100%;
 }
+/* constraint and even sizing on image */
+.responsive-image {
+  max-height: 30em;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 1em;
+}
+/* reduce max width of thumbnail */
+.thumb-list img {
+  max-width: 6em;
+  max-height: 6em;
+}
+/* fix chevron position */
+[data-icon="chevron-left"] {
+  position: absolute;
+  left: 0;
+}
+[data-icon="chevron-right"] {
+  position: absolute;
+  right: 0;
+}
+/* reduce sizing of chevrons */
+.control-box .control {
+  font-size: 1.25em;
+}
 </style>
