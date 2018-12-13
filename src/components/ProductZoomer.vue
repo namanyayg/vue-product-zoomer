@@ -231,7 +231,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import "../assets/drift-zoom/src/css/drift-basic.css";
 .preview-box {
   margin-bottom: 1vh;
