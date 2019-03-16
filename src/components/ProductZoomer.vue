@@ -84,7 +84,7 @@ export default {
       return this.options.namespace + "-pane-container";
     },
     move_button: function() {
-      return this.options.move_button_style === 'chevron' ? 
+      return this.options.move_button_style === 'chevron' ?
               {
                 "left": "chevron-left",
                 "right": "chevron-right"
@@ -102,7 +102,7 @@ export default {
       .setAttribute(
         "style",
         "grid-template-columns: repeat(" +
-          this.baseZoomerOptions.scroll_items +
+          Math.min(this.baseZoomerOptions.scroll_items, 5) +
           ", auto)"
       );
     let t = setInterval(() => {
